@@ -8701,7 +8701,22 @@ figure {
   padding: 30px;
 }
 
-.fh5co-navigation .fh5co-cover .copy .display-tc div span {
+.fh5co-navigation .fh5co-cover .copy .display-tc div .behind_post {
+  position: absolute;
+  left: 660px;
+  top: 35%;
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .05em;
+}
+
+.fh5co-navigation .fh5co-cover .copy .display-tc div .next_post {
+  position: absolute;
+  right: 660px;
+  top: 35%;
   display: block;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.5);

@@ -396,7 +396,21 @@ h1, h2, h3, h4, h5, h6, figure {
 				vertical-align: middle;
 				div {
 					padding: 30px;
-					span {
+					.behind_post {
+						position: absolute;
+						left: 660px;
+						top: 35%;
+						display: block;
+						margin-bottom: 10px;
+						color: rgba(255,255,255,.5);
+						text-transform: uppercase;
+						font-size: 12px;
+						letter-spacing: .05em;
+					}
+					.next_post {
+						position: absolute;
+						right: 660px;
+						top: 35%;
 						display: block;
 						margin-bottom: 10px;
 						color: rgba(255,255,255,.5);

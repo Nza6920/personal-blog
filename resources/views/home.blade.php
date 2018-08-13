@@ -27,51 +27,20 @@
     </div>
     <div id="fh5co-main-content">
       <div class="fh5co-post">
-        <div class="fh5co-entry padding">
-          <img src="uploads/images/project-1.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-          <div>
-            <span class="fh5co-post-date">October 12, 2016</span>
-            <h2><a href="{{ route('topics.show',1) }}">How to be an effective web developer</a></h2>
-            <p>How two simple exercises changed my life</p>
-          </div>
-        </div>
 
-        <div class="fh5co-entry padding">
-          <img src="uploads/images/project-2.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-          <div>
-            <span class="fh5co-post-date">October 12, 2016</span>
-            <h2><a href="{{ route('topics.show',1) }}">How to be an effective web developer</a></h2>
-            <p>How two simple exercises changed my life</p>
+        @foreach ($topics as $topic)
+          <div class="fh5co-entry padding">
+            <img src="{{ $topic->user->avatar }}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+            <div>
+              <span class="fh5co-post-date">{{ $topic->created_at->diffForHumans() }}</span>
+              <h2><a href="{{ route('topics.show',$topic->id) }}">{{ $topic->title }}</a></h2>
+              <p>{{ $topic->excerpt }}</p>
+            </div>
           </div>
+        @endforeach
+        <div style="position: absolute; left: 40%; top: 95%">
+          {!! $topics->render() !!}
         </div>
-
-        <div class="fh5co-entry padding">
-          <img src="uploads/images/project-6.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-          <div>
-            <span class="fh5co-post-date">October 12, 2016</span>
-            <h2><a href="{{ route('topics.show',1) }}">How to be an effective web developer</a></h2>
-            <p>How two simple exercises changed my life</p>
-          </div>
-        </div>
-
-        <div class="fh5co-entry padding">
-          <img src="uploads/images/project-5.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-          <div>
-            <span class="fh5co-post-date">October 12, 2016</span>
-            <h2><a href="{{ route('topics.show',1) }}">How to be an effective web developer</a></h2>
-            <p>How two simple exercises changed my life</p>
-          </div>
-        </div>
-
-        <div class="fh5co-entry padding">
-          <img src="uploads/images/project-4.jpg" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
-          <div>
-            <span class="fh5co-post-date">October 12, 2016</span>
-            <h2><a href="{{ route('topics.show',1) }}">How to be an effective web developer</a></h2>
-            <p>How two simple exercises changed my life</p>
-          </div>
-        </div>
-
         <footer style="text-align:center">
           <div >
           &copy; 2016 Free HTML5.
