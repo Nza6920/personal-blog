@@ -41,33 +41,33 @@
 	</div>
 
 	<div class="fh5co-navigation">
-		<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ url('uploads/images/project-4.jpg') }})">
-			<div class="overlay"></div>
-
-				@if(!$behind)
-					<a class="copy" href="{{ route('home.show') }}">
-				@else
-					<a class="copy" href="{{ route('topics.show', $behind->id) }}">
-				@endif
-				<div class="display-t">
-					<div class="display-tc">
-						<div>
-							<span class="behind_post">上一篇</span>
-							@if(!$behind)
-								<h2>没有上一篇啦</h2>
-							@else
-								<h2>{{ $behind->title }}</h2>
-							@endif
-						</div>
+		@if(!$behind)
+			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})">
+				<a class="copy" href="{{ route('home.show') }}">
+		@else
+			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ $behind->background }})">
+				<a class="copy" href="{{ route('topics.show', $behind->id) }}">
+		@endif
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span class="behind_post">上一篇</span>
+						@if(!$behind)
+							<h2>没有上一篇啦</h2>
+						@else
+							<h2>{{ $behind->title }}</h2>
+						@endif
 					</div>
 				</div>
+			</div>
 			</a>
 		</div>
-		<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ url('uploads/images/project-5.jpg') }})">
-			<div class="overlay"></div>
-			@if(!$next)
+
+		@if(!$next)
+		<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})">
 				<a class="copy" href="{{ route('home.show') }}">
 			@else
+			<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ $next->background }})">
 				<a class="copy" href="{{ route('topics.show', $next->id) }}">
 			@endif
 				<div class="display-t">
@@ -75,7 +75,7 @@
 						<div>
 							<span class="next_post">下一篇</span>
 							@if(!$next)
-								<h2>没有下一遍啦</h2>
+								<h2>没有下一篇啦</h2>
 							@else
 								<h2>{{ $next->title }}</h2>
 							@endif
@@ -87,9 +87,9 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer class="home_footer">
 		<div>
-		&copy; 2016 Free HTML5.
+		&copy; 2018 Free HTML5.
 		</div>
 	</footer>
 

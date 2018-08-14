@@ -12,13 +12,13 @@
                 <div class="media-body">
 
                     <div class="media-heading">
-                        <a href="{{ route('topics.show', $topic->id) }}" title="{{ $topic->title }}">
+                        <a href="{{ route('topics.show', $topic->id) }}" title="{{ $topic->title }}" style="color:black">
                             {{ $topic->title }}
                         </a>
                     </div>
 
                     <div class="media-body meta">
-                        <a href="#" title="作者">
+                        <a href="#" title="作者" style="color:rgb(102, 102, 102);">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                             {{ $topic->user->name }}
                         </a>

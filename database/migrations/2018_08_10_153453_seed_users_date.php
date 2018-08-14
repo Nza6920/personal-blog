@@ -14,7 +14,7 @@ class SeedUsersDate extends Migration
                 'name' => 'pepsi',
                 'email' => 'niu@qq.com',
                 'password' => bcrypt('123456'),
-                'avatar' => asset('uploads/images/avatar.jpg'),
+                'avatar' => asset('uploads/images/system/avatar.jpg'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],

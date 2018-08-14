@@ -5,7 +5,7 @@
   <div class="fh5co-loader"></div>
 
   <div id="page">
-    <div id="fh5co-aside" style="background-image: url('uploads/images/image_1.jpg')">
+    <div id="fh5co-aside" style="background-image: url('uploads/images/system/image_1.jpg')">
 
 
       <div class="overlay"></div>

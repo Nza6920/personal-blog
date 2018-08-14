@@ -12,7 +12,7 @@ class AdminController extends Controller
 {
     public function show(Request $request)
     {
-        $topics = $request->user()->topics()->with(['user'])->paginate(15);
+        $topics = $request->user()->topics()->orderBy('id','desc')->with(['user'])->paginate(15);
         return view('admin.index', ['user' => $request->user(), 'topics' => $topics ]);
     }
 
