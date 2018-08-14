@@ -15,21 +15,25 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
-		<div id="fh5co-aside" style="background-image: url({{ $topic->background }})" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<nav role="navigation">
-				<ul>
-					<li><a href="{{ route('home.show') }}"><i class="icon-home"></i></a></li>
-				</ul>
-			</nav>
-			<div class="page-title">
-				<img src="images/person_1.jpg" alt="">
-				<h2 class="text-center">
-					{{ $topic->title }}
-				</h2>
-				<span>{{ date("F . d . Y",  strtotime($topic->created_at)) }}</span>
+		@if(!$topic->background)
+			<div id="fh5co-aside" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})" data-stellar-background-ratio="0.5">
+		@else
+			<div id="fh5co-aside" style="background-image: url({{ $topic->background }})" data-stellar-background-ratio="0.5">
+		@endif
+				<div class="overlay"></div>
+				<nav role="navigation">
+					<ul>
+						<li><a href="{{ route('home.show') }}"><i class="icon-home"></i></a></li>
+					</ul>
+				</nav>
+				<div class="page-title">
+					<img src="images/person_1.jpg" alt="">
+					<h2 class="text-center">
+						{{ $topic->title }}
+					</h2>
+					<span>{{ date("F . d . Y",  strtotime($topic->created_at)) }}</span>
+				</div>
 			</div>
-		</div>
 		<div id="fh5co-main-content">
 			<div class="fh5co-post">
 				<div class="fh5co-entry padding">
