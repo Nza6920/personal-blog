@@ -38,10 +38,10 @@
             </div>
           </div>
         @endforeach
-        <div style="position: absolute; left: 40%; top: 95%">
+        <div style="position: relative; left: 40%; top: 95%">
           {!! $topics->render() !!}
         </div>
-        <footer style="text-align:center">
+        <footer class="home_footer" style="text-align:center">
           <div >
           &copy; 2016 Free HTML5.
           </div>

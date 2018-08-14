@@ -14,7 +14,7 @@ $factory->define(App\Models\Topic::class, function (Faker $faker) {
         'title'        => $sentence,
         'body'         => $faker->text,
         'excerpt'      => $sentence,
-        'background'   => public_path('uploads/images/image_2.jpg'),
+        'background'   => asset('uploads/images/image_2.jpg'),
         'created_at'   => $created_at,
         'updated_at'   => $updated_time,
     ];

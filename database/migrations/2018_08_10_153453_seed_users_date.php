@@ -12,8 +12,8 @@ class SeedUsersDate extends Migration
         $user = [
             [
                 'name' => 'pepsi',
-                'email' => 'Nza6920@gmail.com',
-                'password' => bcrypt('nza08157016.'),
+                'email' => 'niu@qq.com',
+                'password' => bcrypt('123456'),
                 'avatar' => 'https://fsdhubcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/60/h/60',
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
@@ -25,6 +25,6 @@ class SeedUsersDate extends Migration
 
     public function down()
     {
-        
+
     }
 }

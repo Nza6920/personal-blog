@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		};
 	}
 }
-footer {
+.home_footer {
 	background: lighten($brand-black, 98%);
 	clear: both;
 	font-size: 12px;
@@ -980,6 +980,81 @@ footer {
     margin-bottom: 60px;
 }
 
+#fh5co-aside .sentence > span{
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  letter-spacing: .05em;
+  margin-bottom: 10px;
+}
+
+#fh5co-aside .sentence h2{
+  color: #adadad;
+  font-weight: 300;
+}
+
+
+#fh5co-aside .sentence{
+  z-index: 12;
+  position: absolute;
+  left: 130px;
+  top: 200px;
+  padding: 30px;
+}
+
+
+.topics {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
+/* footer */
+
+.admin_footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+
+  a {
+    color: #555;
+  }
+
+  a:hover {
+    color: #222;
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+
+  img.brand-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .slogon {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
 /* Topic Index Page */
 .topics-index-page {
     .topic-list {
@@ -1011,25 +1086,25 @@ footer {
     }
 }
 
-
-#fh5co-aside .sentence > span{
-  display: block;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 15px;
-  letter-spacing: .05em;
-  margin-bottom: 10px;
+.delete-btn {
+  float: right;
+  position: relative;
+  right: 0;
 }
 
-#fh5co-aside .sentence h2{
-  color: #adadad;
-  font-weight: 300;
-}
+/* Topic Show Page */
 
+@import "topic_body";
 
-#fh5co-aside .sentence{
-  z-index: 12;
-  position: absolute;
-  left: 130px;
-  top: 200px;
-  padding: 30px;
+.topics-show-page {
+
+    .panel {
+        padding: 15px;
+
+        h1 {
+            margin: 0.4em auto 0.6em;
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
 }

@@ -1,83 +1,51 @@
+@if (count($topics))
+
     <ul class="media-list">
+        @foreach ($topics as $topic)
             <li class="media">
                 <div class="media-left">
                     <a href="#">
-                        <img class="media-object img-thumbnail" style="width: 52px; height: 52px;" src="https://fsdhubcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/60/h/60" title="姓名">
+                        <img class="media-object img-thumbnail" style="width: 82px; height: 82px;" src="{{ $user->avatar }}" title="{{ $user->name }}">
                     </a>
                 </div>
+
                 <div class="media-body">
 
                     <div class="media-heading">
-                        <a href="#" title="标题">
-                              标题
+                        <a href="{{ route('topics.show', $topic->id) }}" title="{{ $topic->title }}">
+                            {{ $topic->title }}
                         </a>
                     </div>
+
                     <div class="media-body meta">
-                        <span> • </span>
-                        <a href="#" title="姓名">
+                        <a href="#" title="作者">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            牛
+                            {{ $topic->user->name }}
                         </a>
                         <span> • </span>
                         <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                        <span class="timeago" title="最后活跃于">2016-8-9</span>
+                        <span class="timeago" title="最后活跃于">{{ $topic->created_at->diffForHumans() }}</span>
+                        <form action="{{ route('admin.destroy', $topic->id)}}" method="post">
+                          {{ csrf_field() }}
+                          {{ method_field('DELETE') }}
+                          <button type="submit" class="btn btn-sm btn-danger delete-btn">删除</button>
+                        </form>
+                        <a href="{{ route('admin.edit', $topic->id) }}"><button class="btn btn-primary pull-right">编辑</button></a>
                     </div>
-                </div>
-            </li>
-            <hr>
-            <li class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object img-thumbnail" style="width: 52px; height: 52px;" src="https://fsdhubcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/60/h/60" title="姓名">
-                    </a>
-                </div>
-                <div class="media-body">
 
-                    <div class="media-heading">
-                        <a href="#" title="标题">
-                              标题
-                        </a>
-                    </div>
-                    <div class="media-body meta">
-                        <span> • </span>
-                        <a href="#" title="姓名">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            牛
-                        </a>
-                        <span> • </span>
-                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                        <span class="timeago" title="最后活跃于">2016-8-9</span>
-                    </div>
                 </div>
-            </li>
-            <hr>
-            <li class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object img-thumbnail" style="width: 52px; height: 52px;" src="https://fsdhubcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/60/h/60" title="姓名">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <div class="media-heading">
-                        <a href="#" title="标题">
-                              标题
-                        </a>
-                    </div>
-                    <div class="media-body meta">
-                        <span> • </span>
-                        <a href="#" title="姓名">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            牛
-                        </a>
-                        <span> • </span>
-                        <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                        <span class="timeago" title="最后活跃于">2016-8-9</span>
-                    </div>
-                </div>
-            </li>
-            <hr>
 
 
+            </li>
+
+
+            @if ( ! $loop->last)
+                <hr>
+            @endif
+
+        @endforeach
     </ul>
 
-   <!-- <div class="empty-block">暂无数据 ~_~ </div> -->
+@else
+   <div class="empty-block">暂无数据 ~_~ </div>
+@endif

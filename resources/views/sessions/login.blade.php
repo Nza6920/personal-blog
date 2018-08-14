@@ -10,9 +10,11 @@
 <script src="/js/modernizr.js"></script>
 </head>
 <body class="login-page">
+  @include('error.error')
+  @include('layouts._message')
 <div class="login-form">
     <div class="login-content">
-        <form method="post" action="#" id="form_login">
+        <form method="post" action="{{ route('login') }}" id="form_login">
           {{ csrf_field() }}
             <div class="form-group">
                 <div class="input-group">
