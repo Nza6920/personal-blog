@@ -2,9 +2,6 @@
 @section('title', 'Niu的个人博客 - 首页')
 
 @section('content')
-  <div class="fh5co-loader"></div>
-
-  <div id="page">
     <div id="fh5co-aside" style="background-image: url('uploads/images/system/image_1.jpg')">
 
 
@@ -22,9 +19,10 @@
 
       <div class="featured">
         <span>Hi:</span>
-        <h2>I'm Niu</h2>
+        <h2><a href="https://github.com/Nza6920">I'm Niu</a></h2>
       </div>
     </div>
+  <div id="page">
     <div id="fh5co-main-content">
       <div class="fh5co-post">
 
@@ -53,5 +51,6 @@
   <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
   </div>
+
 
 @endsection

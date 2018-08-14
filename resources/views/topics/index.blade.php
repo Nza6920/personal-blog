@@ -45,21 +45,24 @@
 	</div>
 
 	<div class="fh5co-navigation">
-		@if(!$behind)
+		@if(!$next)
 			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})">
 				<a class="copy" href="{{ route('home.show') }}">
+		@elseif(!$next->background)
+			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})">
+				<a class="copy" href="{{ route('topics.show', $next->id) }}">
 		@else
-			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ $behind->background }})">
-				<a class="copy" href="{{ route('topics.show', $behind->id) }}">
+			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ $next->background }})">
+				<a class="copy" href="{{ route('topics.show', $next->id) }}">
 		@endif
 			<div class="display-t">
 				<div class="display-tc">
 					<div>
 						<span class="behind_post">上一篇</span>
-						@if(!$behind)
+						@if(!$next)
 							<h2>没有上一篇啦</h2>
 						@else
-							<h2>{{ $behind->title }}</h2>
+							<h2>{{ $next->title }}</h2>
 						@endif
 					</div>
 				</div>
@@ -67,21 +70,24 @@
 			</a>
 		</div>
 
-		@if(!$next)
+		@if(!$behind)
 		<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})">
 				<a class="copy" href="{{ route('home.show') }}">
-			@else
-			<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ $next->background }})">
-				<a class="copy" href="{{ route('topics.show', $next->id) }}">
-			@endif
+		@elseif(!$behind->background)
+			<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ asset('uploads/images/system/default.jpg') }})">
+				<a class="copy" href="{{ route('topics.show', $behind->id) }}">
+		@else
+			<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ $behind->background }})">
+				<a class="copy" href="{{ route('topics.show', $behind->id) }}">
+		@endif
 				<div class="display-t">
 					<div class="display-tc">
 						<div>
 							<span class="next_post">下一篇</span>
-							@if(!$next)
+							@if(!$behind)
 								<h2>没有下一篇啦</h2>
 							@else
-								<h2>{{ $next->title }}</h2>
+								<h2>{{ $behind->title }}</h2>
 							@endif
 						</div>
 					</div>
@@ -100,7 +106,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-
+</div>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/jquery.easing.1.3.js"></script>
   <script src="/js/bootstrap.min.js"></script>

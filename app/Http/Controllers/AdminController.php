@@ -70,4 +70,18 @@ class AdminController extends Controller
     {
         return view('admin.create_and_edit', ['topic' => $topic]);
     }
+
+    // 更新帖子
+    public function update(TopicRequest $request,Topic $topic,ImageUploadHandler $uploader)
+    {
+        $topic->fill($request->all());
+        if ($request->background) {
+            $result = $uploader->save($request->background, 'background', $topic->id);
+            if ($result) {
+                $topic->background = $result['path'];
+            }
+        }
+        $topic->save();
+    		return redirect()->route('admin.show')->with('success', '更新成功！');
+    }
 }

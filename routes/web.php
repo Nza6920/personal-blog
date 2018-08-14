@@ -25,4 +25,5 @@ Route::group(['middleware' => 'auth'], function() {
   Route::post('upload_image', 'AdminController@uploadImage')->name('admin.upload_image');
   Route::delete('logout', 'SessionsController@destroy')->name('logout');
   Route::get('admin/edit/{topic}', 'AdminController@edit')->name('admin.edit');
+  Route::put('admin/update/{topic}', 'AdminController@update')->name('admin.update');
 });
