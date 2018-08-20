@@ -6,7 +6,7 @@ Route::get('/home', function() {
     return redirect()->route('admin.show');
 });
 
-Route::get('/topic/{topic}', 'TopicsController@show')->name('topics.show');
+Route::get('/topics/{topic}', 'TopicsController@show')->name('topics.show');
 
 
 Route::group(['middleware'=>'guest'], function() {

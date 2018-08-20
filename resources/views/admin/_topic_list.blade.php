@@ -12,7 +12,7 @@
                 <div class="media-body">
 
                     <div class="media-heading">
-                        <a href="{{ route('topics.show', $topic->id) }}" title="{{ $topic->title }}" style="color:black">
+                        <a href="{{ route('topics.show', $topic) }}" title="{{ $topic->title }}" style="color:black">
                             {{ $topic->title }}
                         </a>
                     </div>

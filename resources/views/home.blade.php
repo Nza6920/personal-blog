@@ -31,7 +31,7 @@
             <img src="{{ $topic->user->avatar }}" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
             <div>
               <span class="fh5co-post-date">{{ $topic->created_at->diffForHumans() }}</span>
-              <h2><a href="{{ route('topics.show',$topic->id) }}">{{ $topic->title }}</a></h2>
+              <h2><a href="{{ route('topics.show',$topic) }}">{{ $topic->title }}</a></h2>
               <p>{{ $topic->excerpt }}</p>
             </div>
           </div>
@@ -41,7 +41,7 @@
         </div>
         <footer class="home_footer" style="text-align:center">
           <div >
-          &copy; 2016 Free HTML5.
+          &copy; 2018 niu.
           </div>
         </footer>
       </div>

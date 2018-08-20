@@ -51,6 +51,7 @@ class AdminController extends Controller
             'msg'       => '上传失败!',
             'file_path' => ''
         ];
+        
         // 判断是否有上传文件，并赋值给 $file
         if ($file = $request->upload_file) {
             // 保存图片到本地

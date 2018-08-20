@@ -53,7 +53,7 @@
 				<a class="copy" href="{{ route('topics.show', $next->id) }}">
 		@else
 			<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url({{ $next->background }})">
-				<a class="copy" href="{{ route('topics.show', $next->id) }}">
+				<a class="copy" href="{{ route('topics.show', $next) }}">
 		@endif
 			<div class="display-t">
 				<div class="display-tc">
@@ -78,7 +78,7 @@
 				<a class="copy" href="{{ route('topics.show', $behind->id) }}">
 		@else
 			<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url({{ $behind->background }})">
-				<a class="copy" href="{{ route('topics.show', $behind->id) }}">
+				<a class="copy" href="{{ route('topics.show', $behind) }}">
 		@endif
 				<div class="display-t">
 					<div class="display-tc">
