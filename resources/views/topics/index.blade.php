@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Niu的个人博客 - 内容</title>
+    <title>Niu的个人博客! - 内容</title>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/icomoon.css">
     <link rel="stylesheet" href="/css/animate.css">

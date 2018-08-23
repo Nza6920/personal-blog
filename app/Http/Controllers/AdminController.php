@@ -12,7 +12,7 @@ class AdminController extends Controller
 {
     public function show(Request $request)
     {
-        $topics = $request->user()->topics()->orderBy('id','desc')->with(['user'])->paginate(15);
+        $topics = $request->user()->topics()->latest('id')->with(['user'])->paginate(15);
         return view('admin.index', ['user' => $request->user(), 'topics' => $topics ]);
     }
 
@@ -51,7 +51,7 @@ class AdminController extends Controller
             'msg'       => '上传失败!',
             'file_path' => ''
         ];
-        
+
         // 判断是否有上传文件，并赋值给 $file
         if ($file = $request->upload_file) {
             // 保存图片到本地

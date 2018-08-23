@@ -1,7 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Niu的个人博客 - 首页')
+@section('title', 'Niu的个人博客! - 首页')
 
 @section('content')
+    <div class="fh5co-loader"></div>
     <div id="fh5co-aside" style="background-image: url('uploads/images/system/image_1.jpg')">
 
 

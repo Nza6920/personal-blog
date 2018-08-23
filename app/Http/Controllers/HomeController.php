@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function show()
     {
-        $topics = Topic::with(['user'])->orderBy('id','desc')->paginate(10);
+        $topics = Topic::with(['user'])->latest('id')->paginate(10);
 
         return view('home', ['topics' => $topics]);
     }
