@@ -40,9 +40,10 @@
         <div style="position: relative; left: 40%; top: 95%">
           {!! $topics->render() !!}
         </div>
-        <footer class="home_footer" style="text-align:center">
+        <footer class="home_footer" style="text-align:center; bottom: 0;">
           <div >
-          &copy; 2018 niu.
+            &copy;Niu Blog 2018 .Powered By Niu
+              <br><a href="http://www.miitbeian.gov.cn/" target="_blank">青ICP备18000982号-1</a>
           </div>
         </footer>
       </div>
