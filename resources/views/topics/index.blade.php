@@ -98,8 +98,9 @@
 	</div>
 
 	<footer class="home_footer">
-		<div>
-		&copy; 2018 Free HTML5.
+		<div >
+			&copy;Niu Blog 2018 .Powered By Niu
+				<br><a href="http://www.miitbeian.gov.cn/" target="_blank">青ICP备18000982号-1</a>
 		</div>
 	</footer>
 
