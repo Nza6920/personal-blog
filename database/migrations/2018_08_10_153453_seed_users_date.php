@@ -11,9 +11,9 @@ class SeedUsersDate extends Migration
     {
         $user = [
             [
-                'name' => 'pepsi',
-                'email' => '1484663282@qq.com',
-                'password' => bcrypt('nza08157016.'),
+                'name' => 'admin',
+                'email' => 'admin@admin.com',
+                'password' => bcrypt('admin'),
                 'avatar' => asset('uploads/images/system/avatar.jpg'),
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
