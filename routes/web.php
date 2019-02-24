@@ -15,8 +15,6 @@ Route::group(['middleware'=>'guest'], function() {
 });
 
 
-
-
 Route::group(['middleware' => 'auth'], function() {
   Route::get('/admin/index', 'AdminController@show')->name('admin.show');
   Route::delete('admin/delete/{topic}', 'AdminController@destroy')->name('admin.destroy');

@@ -27,7 +27,6 @@
 					</ul>
 				</nav>
 				<div class="page-title">
-					<img src="images/person_1.jpg" alt="">
 					<h2 class="text-center">
 						{{ $topic->title }}
 					</h2>
