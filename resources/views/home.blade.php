@@ -14,13 +14,13 @@
       </nav>
 
       <div class="sentence">
-        <span></span>
-        <h2 >白天搬砖,晚上砌梦想.</h2>
+        {{-- <h2 >白天搬砖,晚上砌梦想.</h2> --}}
+        <h1>Stay hungry, Stay foolish.</h1>
       </div>
 
       <div class="featured">
         <span>Hi:</span>
-        <h2><a href="https://github.com/Nza6920">I'm Niu</a></h2>
+        <h1><a href="https://github.com/Nza6920">I'm Niu</a></h1>
       </div>
     </div>
   <div id="page">
@@ -37,7 +37,7 @@
             </div>
           </div>
         @endforeach
-        <div style="position: relative; left: 40%; top: 95%">
+        <div style="position: relative; left: 43%; top: 95%">
           {!! $topics->render() !!}
         </div>
         <footer class="home_footer" style="text-align:center; bottom: 0;">

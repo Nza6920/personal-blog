@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			display: block;
 			color: rgba(255,255,255,.5);
 			text-transform: uppercase;
-			font-size: 15px;
+			font-size: 18px;
 			letter-spacing: .05em;
 			margin-bottom: 10px;
 		}
@@ -945,7 +945,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('http://www.nnzzaa.cn/uploads/images/system/loader.gif') center no-repeat #fff;
+	background: url('/uploads/images/system/loader.gif') center no-repeat #fff;
 }
 
 .animate-box {
@@ -980,15 +980,15 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 60px;
 }
 
-#fh5co-aside .sentence > span{
+#fh5co-aside .sentence {
   display: block;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: .05em;
   margin-bottom: 10px;
 }
 
-#fh5co-aside .sentence h2{
+#fh5co-aside .sentence h1{
   color: #adadad;
   font-weight: 300;
 }
@@ -997,8 +997,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-aside .sentence{
   z-index: 12;
   position: absolute;
-  left: 130px;
-  top: 200px;
+  left: 129px;
+  top: 197px;
   padding: 30px;
 }
 
