@@ -1,8 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
-# /public/uploads/images/background
-# /public/uploads/images/topics
+/public/uploads/images/background
+/public/uploads/images/topics
 /public/uploads/images/test
 /storage/*.key
 /vendor
