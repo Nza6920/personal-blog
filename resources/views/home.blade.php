@@ -37,7 +37,7 @@
             </div>
           </div>
         @endforeach
-        <div style="position: relative; left: 43%; top: 95%">
+        <div style="position: relative; left: 42%; top: 95%">
           {!! $topics->render() !!}
         </div>
         <footer class="home_footer" style="text-align:center; bottom: 0;">
