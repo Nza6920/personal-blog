@@ -8846,7 +8846,7 @@ figure {
 }
 
 .home_footer {
-  background: #fafafa;
+  background: #333333;
   clear: both;
   font-size: 12px;
   padding: 20px 30px !important;
@@ -8856,6 +8856,10 @@ figure {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
+}
+
+.home_footer a {
+  color: inherit;
 }
 
 #fh5co-main-content {
@@ -9821,7 +9825,7 @@ figure {
 .simditor-body blockquote,
 .topic-body blockquote {
   margin: 20px 0 !important;
-  background-color: #f5f8fc;
+  background-color: #e7f1ff;
   padding: 1rem;
   color: #8796A8;
   border-left: none;
@@ -9878,16 +9882,9 @@ figure {
 
 .simditor-body code,
 .topic-body code {
-  background: rgba(90, 87, 87, 0);
-  margin: 5px;
-  color: #858080;
+  color: #cccccc;
   border-radius: 4px;
-  background-color: #f9fafa;
-  border: 1px solid #e4e4e4;
   max-width: 740px;
-  overflow-x: auto;
-  font-size: .9em;
-  padding: 1px 2px 1px;
 }
 
 .simditor-body code:before,
@@ -9920,6 +9917,7 @@ figure {
   padding: 14px;
   overflow: auto;
   line-height: 1.45;
+  background-color: #221f1f;
   border-radius: 3px;
   color: inherit;
   border: none;

@@ -35,6 +35,5 @@
     </div>
 </div>
 </div>
-<script src='js/jquery_and_jqueryui.js'></script>
 </body>
 </html>

@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 .home_footer {
-	background: lighten($brand-black, 98%);
+	background: lighten($brand-black, 20%);
 	clear: both;
 	font-size: 12px;
 	padding: 20px 30px!important;
@@ -550,6 +550,9 @@ h1, h2, h3, h4, h5, h6, figure {
 			margin: 0 auto;
 			text-align: center;
 		}
+	}
+	a {
+		color: inherit;
 	}
 }
 #fh5co-main-content {
