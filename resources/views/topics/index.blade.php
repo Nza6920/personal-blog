@@ -9,7 +9,8 @@
     <title>Niu的个人博客! - 内容</title>
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/icomoon.css">
-    <link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="icon" href="{{asset('uploads/images/system/niu.png')}}" type="image/x-icon">
 	</head>
 <body class="single">
 	<div class="fh5co-loader"></div>

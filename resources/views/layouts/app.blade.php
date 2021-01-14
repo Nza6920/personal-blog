@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/icomoon.css">
     <link rel="stylesheet" href="/css/animate.css">
+    <link rel="icon" href="{{asset('uploads/images/system/niu.png')}}" type="image/x-icon">
     @yield('styles')
   </head>
   <body>

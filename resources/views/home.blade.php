@@ -5,7 +5,6 @@
     <div class="fh5co-loader"></div>
     <div id="fh5co-aside" style="background-image: url('uploads/images/system/image_1.jpg')">
 
-
       <div class="overlay"></div>
       <nav role="navigation">
         <ul>
@@ -53,6 +52,4 @@
   <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
   </div>
-
-
 @endsection

@@ -7,6 +7,7 @@
 <link rel='stylesheet' href='/css/jquery-ui.css'>
 <link rel='stylesheet prefetch' href='/css/bootstrap.min.css'>
 <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css" />
+<link rel="icon" href="{{asset('uploads/images/system/niu.png')}}" type="image/x-icon">
 <script src="/js/modernizr.js"></script>
 </head>
 <body class="login-page">

@@ -4,6 +4,7 @@
     <title>@yield('title', 'Niu的博客') - 博客后台</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{asset('uploads/images/system/niu.png')}}" type="image/x-icon">
     @yield('styles')
   </head>
   <body>
