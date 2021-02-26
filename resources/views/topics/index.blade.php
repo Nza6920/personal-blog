@@ -99,8 +99,8 @@
 
 	<footer class="home_footer">
 		<div >
-			&copy;Niu Blog 2018 .Powered By Niu
-				<br><a href="http://www.miitbeian.gov.cn/" target="_blank">青ICP备18000982号-1</a>
+			&copy;Niu Blog 2021 .Powered By Niu
+				<br><a href="https://beian.miit.gov.cn/" target="_blank">青ICP备18000982号-1</a>
 		</div>
 	</footer>
 
@@ -114,6 +114,6 @@
   <script src="/js/jquery.waypoints.min.js"></script>
   <script src="/js/jquery.stellar.min.js"></script>
   <script src="/js/main.js"></script>
-	<script src="/js/modernizr-2.6.2.min.js"></script>
-	</body>
+  <script src="/js/modernizr-2.6.2.min.js"></script>
+</body>
 </html>

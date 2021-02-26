@@ -41,8 +41,8 @@
         </div>
         <footer class="home_footer" style="text-align:center; bottom: 0;">
           <div >
-            &copy;Niu Blog 2018 .Powered By Niu
-              <br><a href="http://www.miitbeian.gov.cn/" target="_blank">青ICP备18000982号-1</a>
+            &copy;Niu Blog 2021 .Powered By Niu
+              <br><a href="https://beian.miit.gov.cn/" target="_blank">青ICP备18000982号-1</a>
           </div>
         </footer>
       </div>
